@@ -20,6 +20,9 @@ START_BUTTON = [
         InlineKeyboardButton("📖 فروش", callback_data="TRADE_BUTTON"),
         InlineKeyboardButton("👨‍💻 نحوه استفاده", callback_data="ABOUT_BUTTON"),
     ],
+        [
+        InlineKeyboardButton("📤 ارتباط با پشتیبانی", callback_data="CONTACT_US_BUTTON"),
+    ],
     [
         InlineKeyboardButton("درباره ما 💬", callback_data="ABOUT_US_BUTTON"),
     ],
@@ -96,6 +99,11 @@ async def botCallbacks(_, CallbackQuery: CallbackQuery):
     elif CallbackQuery.data == "ABOUT_US_BUTTON":   
         await CallbackQuery.edit_message_text(
             ABOUT_US_CAPTION, reply_markup=InlineKeyboardMarkup(GOBACK_1_BUTTON)
+        )
+        
+    elif CallbackQuery.data == "CONTACT_US_BUTTON":   
+        await CallbackQuery.edit_message_text(
+            CONTACT_US_CAPTION, reply_markup=InlineKeyboardMarkup(GOBACK_1_BUTTON)
         )
 
     await CallbackQuery.answer()

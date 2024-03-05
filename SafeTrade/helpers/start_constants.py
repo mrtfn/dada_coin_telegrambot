@@ -50,3 +50,5 @@ CHOOSE_AN_ORDER = "لطفا یکی از سفارش های زیر را انتخا
 
 
 ABOUT_US_CAPTION = "THIS IS A TEST, GO BACK TURD."
+CONTACT_US_CAPTION = "سلام من باب هستم، اسیر و اجیل شده برای رسوندن پیام شما به دست ادمین. بفرمایید. (⌐■_■)"
+CONTACT_US_REPLAY = "پیام شما با موفقیت ارسال شد.✅" 
